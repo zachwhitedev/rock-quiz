@@ -1,6 +1,3 @@
-const axios = require('axios');
-
-
 export function addScore(score) {
     return {
         type:'ADD_SCORE',
