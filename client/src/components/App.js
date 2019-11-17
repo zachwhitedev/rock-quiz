@@ -6,8 +6,15 @@ import QuestionCard from './QuestionCard/index';
 function App() {
   return (
     <div className="App">
-      <Scoreboard />
+       {/* <img className='mood' src={require(".././image/background.jpeg")} alt='hello' />  */}
+
+       <p className='help'>ROCK QUIZ</p>
+       <img className='mood' src={require(".././image/mike.png")} alt='hello' /> 
       <QuestionCard />
+       <img className='spirit' src={require(".././image/guitar.png")} alt='hello' /> 
+       <div className='top'>
+      <Scoreboard />
+      </div>
     </div>
   );
 }

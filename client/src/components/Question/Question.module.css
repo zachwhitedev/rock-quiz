@@ -1,6 +1,6 @@
 .container {
     padding: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .question {
@@ -8,11 +8,11 @@
 }
 
 .form {
-    margin: 30px auto 0px auto;
-    border: solid black 1px;
+    margin: 10px auto 0px auto;
+    /* border: solid black 1px; */
 }
 
 .btn {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 

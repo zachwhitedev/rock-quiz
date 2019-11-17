@@ -60,7 +60,7 @@ export default function Question(props) {
         <span className={styles.question}>{questions[q].question}</span>
         <FormControl component='fieldset'>
           <RadioGroup
-            className={styles.form}
+            className='dog'
             name='customized-radios'
             onChange={e => setAnswer(e.target.value)}
           >
@@ -94,9 +94,11 @@ export default function Question(props) {
             />
           </RadioGroup>
         </FormControl>
+        <div className='sloppy'>
         <button onClick={submit} className={styles.btn}>
           Submit
         </button>
+        </div>
       </div>
     );
   } else if (isFinished) {

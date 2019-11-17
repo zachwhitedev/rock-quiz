@@ -1,6 +1,39 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-image: linear-gradient(brown,#2b2a2d7d);
+  margin-top: 29%;
+
 }
 
+.mood {
+  z-index: -1;
+  max-width: 97%;
+}
+
+.sloppy {
+  margin-top: 10%;
+  color: white;
+  box-shadow: 10px 10px 10px white;
+  background-color: #6b4d4d;
+  border-radius: 50%;
+}
+
+.spirit {
+  z-index: 1;
+  max-width: 74%;
+  margin-top: -15%;
+  float: right;
+}
+
+.help {
+  z-index: 2;
+  max-width: 74%;
+  margin-top: -15%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin-left: 5%;
+}
