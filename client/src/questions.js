@@ -2,12 +2,12 @@
 const questions = [
     {
       id: 1,
-      question: "What band has the album 'Dark Side of the Moon'?",
+      question: "What band plays the song 'When the Levee Breaks'?",
       answer_a: "Led Zeppelin",
       answer_b: "Pink Floyd",
       answer_c: "Rolling Stones",
       answer_d: "The Beatles",
-      correct_answer: "b"
+      correct_answer: "a"
     },
     {
       id: 2,
@@ -35,6 +35,15 @@ const questions = [
       answer_c: "Led Zeppelin",
       answer_d: "The Beatles",
       correct_answer: "d"
+    },
+    {
+      id: 5,
+      question:"Which is a parasite?",
+      answer_a: "Mud Dobber Wasp",
+      answer_b: "Flea",
+      answer_c: "Tape Worm",
+      answer_d: "Waterbear",
+      correct_answer: "c"
     }
   ];
 
