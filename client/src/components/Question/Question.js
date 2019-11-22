@@ -56,14 +56,23 @@ export default function Question(props) {
   if (!isFinished) {
     return (
       <div className={styles.container}>
+        <div className='sloppy'>
+        <button onClick={submit} className={styles.btn}>
+          Submit
+        </button>
+        </div>
+        <div className='sleep'>
+
+        <div className={styles.question}>{questions[q].question}</div>
+        </div>
         {errorMessage}
-        <span className={styles.question}>{questions[q].question}</span>
         <FormControl component='fieldset'>
           <RadioGroup
             className='dog'
             name='customized-radios'
             onChange={e => setAnswer(e.target.value)}
           >
+           
             <FormControlLabel
               value='a'
               name='a'
@@ -92,13 +101,9 @@ export default function Question(props) {
               label={questions[q].answer_d}
               checked={answer == 'd'}
             />
+            
           </RadioGroup>
         </FormControl>
-        <div className='sloppy'>
-        <button onClick={submit} className={styles.btn}>
-          Submit
-        </button>
-        </div>
       </div>
     );
   } else if (isFinished) {

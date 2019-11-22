@@ -1,10 +1,11 @@
 .container {
     /* border: 1px solid black; */
-    width: 310px;
-    margin: -130px auto 0 auto;
+    /* width: 310px; */
+    /* margin: -130px auto 0 auto; */
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     color: azure;
-    font-size-adjust: 200px;
+    /* font-size-adjust: 400px; */
+    /* margin-top: 50px; */
 }
 
