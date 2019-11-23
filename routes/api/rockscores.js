@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// Rockscore Model
 const Rockscore = require('../../models/Rockscore');
 
 router.get('/', (req, res) => {

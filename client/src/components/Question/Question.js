@@ -103,7 +103,7 @@ export default function Question(props) {
     );
   } else if (isFinished) {
     return (
-      <div>
+      <div className ={styles.totalScore}> 
         <h1>You're finished!</h1>
         <h1>Score: {score}</h1>
       </div>
