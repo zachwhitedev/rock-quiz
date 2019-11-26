@@ -36,7 +36,6 @@ export default function Question(props) {
         setError('Choose an answer.');
       }
       if (answer == questions[q].correct_answer) {
-        alert('Correct!');
         dispatch(addScore(score));
         if (q == questions.length - 1) {
           setIsFinished(true);
