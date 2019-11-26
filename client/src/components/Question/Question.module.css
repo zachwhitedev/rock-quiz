@@ -1,18 +1,83 @@
 .container {
-    padding: 5px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #26ABE2;
+    border-radius: 6px;
+    height: 490px;
+    width: 350px;
 }
 
 .question {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  #272626;
+    font-weight: 500;
 }
 
 .form {
-    margin: 30px auto 0px auto;
-    border: solid black 1px;
+    margin: 20px 15px 0px 15px;
+    color: #272626;
+    background-color: #26ABE2;
+    background: linear-gradient(90deg, rgba(38,171,226,1) 0%, rgb(101, 210, 255) 62%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.PrivateSwitchBase-input-21{
+    color: whitesmoke;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
 }
 
 .btn {
-    border: 1px solid gray;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+	background-color:#EC232A;
+	border-radius:15px;
+	cursor:pointer;
+	color:whitesmoke;
+	font-size:15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100px;
+    height: 50px !important;
 }
 
+.btn:hover {
+	background-color:rgb(240, 64, 70);
+}
+
+.btn:active {
+    background: linear-gradient(90deg, rgb(147, 0, 5) 0%, rgb(208, 99, 103));
+}
+
+span {
+    padding-top: 15px;
+}
+
+.totalScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #26ABE2;
+    border-radius: 6px;
+    height: 490px;
+    width: 350px;
+}

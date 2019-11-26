@@ -6,7 +6,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import styles from './Question.module.css';
 import questions from '../../questions';
-import { addScore, resetScore, getQuestionslength } from './actions';
+import { addScore, getQuestionslength } from './actions';
+import image from '../../hiclipart.com.png';
 
 export default function Question(props) {
   const score = useSelector(state => state.quiz.score);
@@ -18,11 +19,11 @@ export default function Question(props) {
   const [isFinished, setIsFinished] = useState(false);
 
   const submit = () => {
-    if (q == questionslength - 1) {
-      if (answer == ''){
+    if (q === questionslength - 1) {
+      if (answer === ''){
         setError('Choose an answer.');
       };
-      if (answer == questions[q].correct_answer) {
+      if (answer === questions[q].correct_answer) {
         dispatch(addScore(score));
         setIsFinished(true);
         setAnswer('');
@@ -32,12 +33,12 @@ export default function Question(props) {
       }
       return;
     } else {
-      if (answer == '') {
+      if (answer === '') {
         setError('Choose an answer.');
       }
-      if (answer == questions[q].correct_answer) {
+      if (answer === questions[q].correct_answer) {
         dispatch(addScore(score));
-        if (q == questions.length - 1) {
+        if (q === questions.length - 1) {
           setIsFinished(true);
         } else {
           setQ(q + 1);
@@ -57,6 +58,7 @@ export default function Question(props) {
     return (
       <div className={styles.container}>
         {errorMessage}
+        <img className='record-image' src={image} alt='rock and roll'/>
         <span className={styles.question}>{questions[q].question}</span>
         <FormControl component='fieldset'>
           <RadioGroup
@@ -69,28 +71,28 @@ export default function Question(props) {
               name='a'
               control={<StyledRadio />}
               label={questions[q].answer_a}
-              checked={answer == 'a'}
+              checked={answer === 'a'}
             />
             <FormControlLabel
               value='b'
               name='b'
               control={<StyledRadio />}
               label={questions[q].answer_b}
-              checked={answer == 'b'}
+              checked={answer === 'b'}
             />
             <FormControlLabel
               value='c'
               name='c'
               control={<StyledRadio />}
               label={questions[q].answer_c}
-              checked={answer == 'c'}
+              checked={answer === 'c'}
             />
             <FormControlLabel
               value='d'
               name='d'
               control={<StyledRadio />}
               label={questions[q].answer_d}
-              checked={answer == 'd'}
+              checked={answer === 'd'}
             />
           </RadioGroup>
         </FormControl>
@@ -101,7 +103,7 @@ export default function Question(props) {
     );
   } else if (isFinished) {
     return (
-      <div>
+      <div className ={styles.totalScore}> 
         <h1>You're finished!</h1>
         <h1>Score: {score}</h1>
       </div>
